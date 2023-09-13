@@ -72,8 +72,8 @@ namespace StringJoins
         {
             public int Compare(string x, string y)
             {
-                x = x.Split(' ')[0];
-                y = y.Split(' ')[0];
+                x = x.Split('=')[0];
+                y = y.Split('=')[0];
                 var minLength = Math.Min(x.Length, y.Length);
                 for (int i = 0; i < minLength; i++)
                 {
